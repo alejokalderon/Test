@@ -1,6 +1,7 @@
 package org.eduideas.helpp;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getLocation();
     }
 
+    @SuppressLint("SetTextI18n")
     void getLocation() {
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
@@ -38,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 double latti = location.getLatitude();
                 double longi = location.getLongitude();
 
-                ((EditText)findViewById(R.id.lati1)).setText("Latitude: " + latti);
-                ((EditText)findViewById(R.id.longi1)).setText("Longitude: " + longi);
+                ((EditText)findViewById(R.id.lati1)).setText("Latitud: " + latti);
+                ((EditText)findViewById(R.id.longi1)).setText("Longitud: " + longi);
             } else {
                 ((EditText)findViewById(R.id.lati1)).setText("Unable to find correct location.");
                 ((EditText)findViewById(R.id.longi1)).setText("Unable to find correct location. ");

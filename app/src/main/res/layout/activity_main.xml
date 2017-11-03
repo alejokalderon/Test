@@ -35,14 +35,13 @@
         android:id="@+id/lati1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="71dp"
         android:layout_marginStart="98dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/longi1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,11 +50,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="166dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/ubicacion_actual"
-        app:layout_constraintTop_toBottomOf="@+id/lati1"
-        tools:layout_editor_absoluteX="98dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lati1" />
 
 </android.support.constraint.ConstraintLayout>
