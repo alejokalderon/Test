@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Helpp</string>
+    <string name="cargando_ubicacion">Cargando ubicación...</string>
+    <string name="actualizar_ubicacion">Actualizar ubicación</string>
+</resources>
